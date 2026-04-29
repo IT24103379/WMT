@@ -55,6 +55,14 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
 
+      <label>Manufacture Date</label>
+      <input
+        type="date"
+        name="manufactureDate"
+        value={formData.manufactureDate || ""}
+        onChange={handleChange}
+      />
+
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
   );
